@@ -38,6 +38,11 @@
             key-positions = <10 19>;
             bindings = <&caps_word>;
         };
+        combo_apos {
+            timeout-ms = <50>;
+            key-positions = <19 19>;
+            bindings = <&kp APOS>;
+        };
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -72,11 +77,11 @@
                 sym_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &kp APOS       &kp LT       &kp GT      &kp DQT     &kp DOT               &kp AMPS       &kp SEMI        &kp LBKT        &kp RBKT      &kp PRCNT
+      &kp APOS       &kp LT       &kp GT      &kp DQT     &kp DOT               &kp AMPS       &kp none        &kp LBKT        &kp RBKT      &kp PRCNT
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp ESC      &kp MINUS      &kp PLUS      &kp EQUAL      &kp HASH         &kp PIPE       &kp COLON        &kp LPAR        &kp RPAR      &kp QMARK
+      &kp EXCL      &kp MINUS      &kp PLUS     &kp EQUAL    &kp UNDER         &kp PIPE       &kp COLON        &kp LPAR        &kp RPAR      &kp QMARK
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp CARET     &kp FSLH       &kp STAR      &kp BSLH       &kp FSLH          &kp TILDE      &kp DLLR        &kp LBRC        &kp RBRC      &kp AT
+      &kp CARET     &kp FSLH     &kp STAR     &kp BSLH    &kp HASH          &kp TILDE      &kp DLLR        &kp LBRC        &kp RBRC      &kp AT
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                     &trans        &trans        &trans            &trans        &trans        &trans
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -90,7 +95,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &gresc     &sk LCTRL      &sk LALT      &sk LGUI      &none           &kp LEFT      &kp DOWN       &kp UP      &kp RIGHT   &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &none       &kp DEL        &none        &none        &trans            &kp HOME        &none       &none        &kp END    &none
+        &none       &none        &none        &none        &none            &kp HOME        &none       &none        &kp END    &none
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                     &trans        &kp DEL       &trans            &trans        &trans        &trans
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -100,7 +105,7 @@
                 fun_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &none   &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_TOG         &trans        &kp F7        &kp F8        &kp F9       &kp F12
+     &tog QWERTY   &kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_TOG         &trans        &kp F7        &kp F8        &kp F9       &kp F12
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4         &trans        &kp F4        &kp F5        &kp F6       &kp F11
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
