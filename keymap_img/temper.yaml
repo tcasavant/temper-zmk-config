@@ -1,32 +1,32 @@
 layers:
   default:
-  - - Q
-    - W
+  - [Q, W, E, R, T, Y, U, I, O, P]
+  - - A
+    - S
+    - D
     - F
-    - P
-    - B
+    - G
+    - H
     - J
+    - K
     - L
-    - U
-    - Y
-    - {t: '''', s: '"'}
-  - [A, R, S, T, G, M, N, E, I, O]
+    - {t: ;, s: ':'}
   - - Z
     - X
     - C
-    - D
     - V
-    - K
-    - H
-    - {t: ',', s: ;}
-    - {t: ., s: ':'}
-    - {t: '?', s: '!'}
+    - B
+    - N
+    - M
+    - {t: ',', s: <}
+    - {t: ., s: '>'}
+    - /
   - - ⌘
     - num
-    - {t: ⇧, s: ⇪}
-    - SPACE
-    - nav
-    - {t: BACKSPACE, s: Alt+ BACKSPACE}
+    - {t: BSPC, h: LSHIFT}
+    - {t: SPACE, h: nav}
+    - num
+    - ⎇
   qwerty:
   - [Q, W, E, R, T, Y, U, I, O, P]
   - - A
@@ -117,8 +117,8 @@ layers:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
     - {type: held}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   fun:
   - - {t: qwerty, h: toggle}
@@ -154,6 +154,6 @@ layers:
   - - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
     - {type: held}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
