@@ -24,7 +24,7 @@ layers:
   - - {t: ↹, h: num}
     - {t: BSPC, h: LSHIFT}
     - {t: SPACE, h: nav}
-    - '&lt ret'
+    - {t: RET, h: num}
     - ⎇
   qwerty:
   - [Q, W, E, R, T, Y, U, I, O, P]
