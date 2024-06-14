@@ -103,7 +103,7 @@ layers:
     - END
     - ↹
     - {t: BACKSPACE, s: Alt+ BACKSPACE}
-  - - {t: ⇧, h: sticky}
+  - - {t: ESC, s: '`'}
     - {t: ⌃, h: sticky}
     - {t: ⎇, h: sticky}
     - {t: ⌘, h: sticky}
