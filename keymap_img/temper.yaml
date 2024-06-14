@@ -21,7 +21,7 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - /
-  - - ⌘
+  - - {t: ESC, h: ⌘}
     - {t: ↹, h: num}
     - {t: BSPC, h: LSHIFT}
     - {t: SPACE, h: nav}
@@ -166,3 +166,6 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+combos:
+- p: [13, 16]
+  k: ESC
