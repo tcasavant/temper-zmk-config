@@ -7,7 +7,7 @@ layers:
     - {t: F, h: ⌘}
     - G
     - H
-    - {t: J, h: ⎇}
+    - {t: J, h: ⌘}
     - {t: K, h: ⎇}
     - {t: L, h: RCTL}
     - {t: ;, h: RSHIFT, s: ':'}
