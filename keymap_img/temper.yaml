@@ -1,16 +1,7 @@
 layers:
   default_layer:
   - [Q, W, E, R, T, Y, U, I, O, P]
-  - - A
-    - S
-    - D
-    - F
-    - G
-    - H
-    - J
-    - K
-    - L
-    - {t: ;, s: ':'}
+  - ['&hml LSHIFT A', '&hml LCTL S', '&hml LALT D', '&hml LGUI F', G, H, '&hmr RALT J', '&hmr RALT K', '&hmr RCTL L', '&hmr RSHIFT SEMI']
   - - Z
     - X
     - C
@@ -38,16 +29,7 @@ layers:
     - '8'
     - '9'
     - {t: ',', s: <}
-  - - ESC
-    - {t: '-', s: _}
-    - +
-    - {t: '=', s: +}
-    - '#'
-    - ''
-    - '4'
-    - '5'
-    - '6'
-    - {t: ., s: '>'}
+  - ['&hml LSHIFT ESC', '&hml LCTL MINUS', '&hml LALT PLUS', '&hml LGUI EQUAL', '#', '', '&hmr RGUI N4', '&hmr RALT N5', '&hmr RCTL N6', '&hmr RSHIFT DOT']
   - - ''
     - ''
     - '*'
@@ -75,16 +57,7 @@ layers:
     - {t: '[', s: '{'}
     - {t: ']', s: '}'}
     - '%'
-  - - '!'
-    - {t: '-', s: _}
-    - +
-    - {t: '=', s: +}
-    - _
-    - '|'
-    - ':'
-    - (
-    - )
-    - '?'
+  - ['&hml LSHIFT EXCL', '&hml LCTL MINUS', '&hml LALT PLUS', '&hml LGUI EQUAL', _, '|', '&hmr RGUI COLON', '&hmr RALT LPAR', '&hmr RCTL RPAR', '&hmr RSHIFT QMARK']
   - [^, /, '*', \, '#', '~', $, '{', '}', '@']
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -94,7 +67,7 @@ layers:
     - {t: ▽, type: trans}
   nav_layer:
   - ['', '', '', '', '', '', '', '', '', '']
-  - - {t: ESC, s: '`'}
+  - - '&hml LSHIFT ESC'
     - {t: ⌃, h: sticky}
     - {t: ⎇, h: sticky}
     - {t: ⌘, h: sticky}
