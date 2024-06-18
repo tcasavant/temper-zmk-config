@@ -1,7 +1,16 @@
 layers:
   default_layer:
   - [Q, W, E, R, T, Y, U, I, O, P]
-  - ['&hml LSHIFT A', '&hml LCTL S', '&hml LALT D', '&hml LGUI F', G, H, '&hmr RALT J', '&hmr RALT K', '&hmr RCTL L', '&hmr RSHIFT SEMI']
+  - - {t: A, h: LSHIFT}
+    - {t: S, h: LCTL}
+    - {t: D, h: ⎇}
+    - {t: F, h: ⌘}
+    - G
+    - H
+    - {t: J, h: ⎇}
+    - {t: K, h: ⎇}
+    - {t: L, h: RCTL}
+    - {t: ;, h: RSHIFT, s: ':'}
   - - Z
     - X
     - C
@@ -29,7 +38,16 @@ layers:
     - '8'
     - '9'
     - {t: ',', s: <}
-  - ['&hml LSHIFT ESC', '&hml LCTL MINUS', '&hml LALT PLUS', '&hml LGUI EQUAL', '#', '', '&hmr RGUI N4', '&hmr RALT N5', '&hmr RCTL N6', '&hmr RSHIFT DOT']
+  - - {t: ESC, h: LSHIFT}
+    - {t: '-', h: LCTL, s: _}
+    - {t: +, h: ⎇}
+    - {t: '=', h: ⌘, s: +}
+    - '#'
+    - ''
+    - {t: '4', h: ⌘}
+    - {t: '5', h: ⎇}
+    - {t: '6', h: RCTL}
+    - {t: ., h: RSHIFT, s: '>'}
   - - ''
     - ''
     - '*'
@@ -57,7 +75,16 @@ layers:
     - {t: '[', s: '{'}
     - {t: ']', s: '}'}
     - '%'
-  - ['&hml LSHIFT EXCL', '&hml LCTL MINUS', '&hml LALT PLUS', '&hml LGUI EQUAL', _, '|', '&hmr RGUI COLON', '&hmr RALT LPAR', '&hmr RCTL RPAR', '&hmr RSHIFT QMARK']
+  - - {t: '!', h: LSHIFT}
+    - {t: '-', h: LCTL, s: _}
+    - {t: +, h: ⎇}
+    - {t: '=', h: ⌘, s: +}
+    - _
+    - '|'
+    - {t: ':', h: ⌘}
+    - {t: (, h: ⎇}
+    - {t: ), h: RCTL}
+    - {t: '?', h: RSHIFT}
   - [^, /, '*', \, '#', '~', $, '{', '}', '@']
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -67,7 +94,7 @@ layers:
     - {t: ▽, type: trans}
   nav_layer:
   - ['', '', '', '', '', '', '', '', '', '']
-  - - '&hml LSHIFT ESC'
+  - - {t: ESC, h: LSHIFT}
     - {t: ⌃, h: sticky}
     - {t: ⎇, h: sticky}
     - {t: ⌘, h: sticky}
