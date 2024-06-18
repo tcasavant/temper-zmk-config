@@ -1,0 +1,157 @@
+layers:
+  default_layer:
+  - [Q, W, E, R, T, Y, U, I, O, P]
+  - - A
+    - S
+    - D
+    - F
+    - G
+    - H
+    - J
+    - K
+    - L
+    - {t: ;, s: ':'}
+  - - Z
+    - X
+    - C
+    - V
+    - B
+    - N
+    - M
+    - {t: ',', s: <}
+    - {t: ., s: '>'}
+    - {t: /, h: LCTL}
+  - - {t: ESC, h: ⌘}
+    - {t: ↹, h: num_layer}
+    - {t: BSPC, h: LSHIFT}
+    - {t: SPACE, h: nav_layer}
+    - {t: RET, h: sym_layer}
+    - ⎇
+  num_layer:
+  - - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - '7'
+    - '8'
+    - '9'
+    - {t: ',', s: <}
+  - - ESC
+    - {t: '-', s: _}
+    - +
+    - {t: '=', s: +}
+    - '#'
+    - ''
+    - '4'
+    - '5'
+    - '6'
+    - {t: ., s: '>'}
+  - - ''
+    - ''
+    - '*'
+    - ''
+    - ''
+    - ''
+    - '1'
+    - '2'
+    - '3'
+    - {t: '=', s: +}
+  - - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '0'
+    - {t: ▽, type: trans}
+  sym_layer:
+  - - {t: '''', s: '"'}
+    - <
+    - '>'
+    - '"'
+    - {t: ., s: '>'}
+    - '&'
+    - ''
+    - {t: '[', s: '{'}
+    - {t: ']', s: '}'}
+    - '%'
+  - - '!'
+    - {t: '-', s: _}
+    - +
+    - {t: '=', s: +}
+    - _
+    - '|'
+    - ':'
+    - (
+    - )
+    - '?'
+  - [^, /, '*', \, '#', '~', $, '{', '}', '@']
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+  nav_layer:
+  - ['', '', '', '', '', '', '', '', '', '']
+  - - {t: ESC, s: '`'}
+    - {t: ⌃, h: sticky}
+    - {t: ⎇, h: sticky}
+    - {t: ⌘, h: sticky}
+    - ''
+    - ←
+    - ↓
+    - ↑
+    - →
+    - ''
+  - ['', '', '', '', '', HOME, '', '', END, '']
+  - - {t: ▽, type: trans}
+    - DEL
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  fun_layer:
+  - - ''
+    - MUTE
+    - VOL DN
+    - VOL UP
+    - OUT TOG
+    - {t: ▽, type: trans}
+    - F7
+    - F8
+    - F9
+    - F12
+  - - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
+    - {t: BT, h: '4'}
+    - {t: ▽, type: trans}
+    - F4
+    - F5
+    - F6
+    - F11
+  - - BT CLR
+    - PREV
+    - PP
+    - NEXT
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - F1
+    - F2
+    - F3
+    - F10
+  - - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+combos:
+- p: [13, 16]
+  k: ESC
+- p: [10, 19]
+  k: ⇪
+- p: [18, 19]
+  k: ''''
