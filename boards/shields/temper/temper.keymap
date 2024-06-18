@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // Include ZMK Nodefree config from https://github.com/urob/zmk-helpers/tree/main
-#include "../zmk-nodefree-config/helper.h"
+#include "../../../zmk-nodefree-config/helper.h"
 
 #define DEFAULT 0
 #define NUM 1
