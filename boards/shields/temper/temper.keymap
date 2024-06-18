@@ -24,7 +24,7 @@ ZMK_CONDITIONAL_LAYER(NUM SYM, FUN)
 
 /* Behaviors */
 // left-hand HRMs
-ZMK_HOLD_TAP(hml,
+ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
@@ -35,7 +35,7 @@ ZMK_HOLD_TAP(hml,
 )
 
 // right-hand HRMs
-ZMK_HOLD_TAP(hmr,
+ZMK_BEHAVIOR(hmr, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
