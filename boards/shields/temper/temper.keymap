@@ -84,7 +84,7 @@ ZMK_LAYER(num_layer,
 
 ZMK_LAYER(sym_layer,
     // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        &kp APOS       &kp LT       &kp GT      &kp DQT     &kp DOT                                          &kp AMPS       &GRAVE        &kp LBKT        &kp RBKT      &kp PRCNT
+        &kp APOS       &kp LT       &kp GT      &kp DQT     &kp DOT                                          &kp AMPS       &kp GRAVE        &kp LBKT        &kp RBKT      &kp PRCNT
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
         &hml LSHIFT EXCL      &hml LCTL MINUS      &hml LALT UNDER     &hml LGUI EQUAL    &kp PLUS           &kp PIPE       &hmr RGUI COLON        &hmr RALT LPAR        &hmr RCTL RPAR      &hmr RSHIFT QMARK
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
