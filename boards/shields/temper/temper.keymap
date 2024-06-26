@@ -50,6 +50,14 @@ ZMK_BEHAVIOR(hmr, hold_tap,
     hold-trigger-on-release;             // delay positional check until key-release
 )
 
+// Thumb Layer Tap Keys
+ZMK_BEHAVIOR(tlt, hold_tap,
+    flavor = "hold-preferred";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    bindings = <&kp>, <&kp>;
+)
+
 
 /* Combos */
 ZMK_COMBO(esc, &kp ESC, 13 16)
@@ -66,7 +74,7 @@ ZMK_LAYER(default_layer,
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
             &kp Z         &kp X         &kp C         &kp V          &kp B                           &kp N        &kp M       &kp COMMA      &kp DOT      &mt LCTL FSLH
     // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤                ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                    &kp ESC      &lt NUM TAB     &mt LSHIFT BSPC                   &lt              NAV SPACE      &lt SYM RET     &none
+                    &kp ESC      &tlt NUM TAB     &mt LSHIFT BSPC                   &lt              NAV SPACE      &tlt SYM RET     &none
     //                         ╰─────────────┴─────────────┴─────────────╯              ╰─────────────┴─────────────┴─────────────╯
 )
 
