@@ -21,7 +21,7 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - {t: /, h: LCTL}
-  - - ESC
+  - - {t: ↹, h: ⌘}
     - {t: ↹, h: num_layer}
     - {t: BSPC, h: LSHIFT}
     - {t: SPACE, h: nav_layer}
