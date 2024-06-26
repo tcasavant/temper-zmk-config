@@ -55,7 +55,7 @@ ZMK_BEHAVIOR(tlt, hold_tap,
     flavor = "hold-preferred";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
-    bindings = <&kp>, <&kp>;
+    bindings = <&mo>, <&kp>;
 )
 
 
