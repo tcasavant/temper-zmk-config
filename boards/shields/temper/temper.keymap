@@ -52,7 +52,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 
 // Thumb Layer Tap Keys
 ZMK_BEHAVIOR(tlt, hold_tap,
-    flavor = "balanced";
+    flavor = "hold-preferred";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
     require-prior-idle-ms = <150>;
