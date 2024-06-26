@@ -56,7 +56,7 @@ ZMK_BEHAVIOR(tlt, hold_tap,
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
     require-prior-idle-ms = <150>;
-    bindings = <&kp>, <&kp>;
+    bindings = <&mo>, <&kp>;
 )
 
 
@@ -75,7 +75,7 @@ ZMK_LAYER(default_layer,
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
             &kp Z         &kp X         &kp C         &kp V          &kp B                           &kp N        &kp M       &kp COMMA      &kp DOT      &mt LCTL FSLH
     // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤                ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                    &tlt LGUI TAB      &lt NUM TAB     &mt LSHIFT BSPC                   &lt              NAV SPACE      &lt SYM RET     &none
+                    &tlt NUM TAB      &lt NUM TAB     &mt LSHIFT BSPC                   &lt              NAV SPACE      &lt SYM RET     &none
     //                         ╰─────────────┴─────────────┴─────────────╯              ╰─────────────┴─────────────┴─────────────╯
 )
 
