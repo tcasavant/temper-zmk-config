@@ -60,7 +60,7 @@ layers:
     - {t: '=', s: +}
   - - {t: ▽, type: trans}
     - {type: held}
-    - {t: ▽, type: trans}
+    - DEL
     - {t: ▽, type: trans}
     - '0'
     - {t: ▽, type: trans}
