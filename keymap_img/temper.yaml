@@ -21,12 +21,12 @@ layers:
     - {t: ',', s: <}
     - {t: ., s: '>'}
     - {t: /, h: LCTL}
-  - - ESC
+  - - '&key_repeat'
     - {t: ↹, h: num_layer}
     - {t: BSPC, h: LSHIFT}
     - {t: SPACE, h: nav_layer}
     - {t: RET, h: sym_layer}
-    - ''
+    - ESC
   num_layer:
   - - ''
     - ''
